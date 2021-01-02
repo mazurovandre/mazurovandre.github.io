@@ -1,0 +1,83 @@
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url(assets/background.jpg);
+    background-repeat: repeat repeat;
+    font-family: "Raleway", sans-serif;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+    font-family: "overpass", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 35px;
+    margin-top: 0px;
+}
+
+.socials__list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.socials__item {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-left: 3%;
+}
+
+.socials__item:first-child {
+    margin-left: 0;
+}
+
+.socials__img {
+    width: 100%;
+    height: 100%;
+}
+
+.linkedin::after, .github::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #fff;
+}
+
+.linkedin::after {
+    border-radius: 5px;
+}
+.github::after {
+    border-radius: 10px;
+}
+
+.email {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: rgb(34, 34, 34);
+}
